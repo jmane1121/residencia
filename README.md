@@ -1,2 +1,0 @@
-# residencia
-proyecto para residencias 
