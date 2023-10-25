@@ -1,0 +1,44 @@
+BACKEND 
+Para iniciar el proyecto primero se tiene la siguiente estructura 
+App -> Carpeta principal
+	  |-- Node -> Carpeta para el backend
+	  |-- Mathskillup -> Carpeta para el frontend
+Dentro de la carpeta "Node" se escribira el siguiente comando
+                      npm init -y
+
+En el archivo "package.json" debajo de la linea 5 -> "main":"indez.js" se ingresa la siguiente linea:
+          "type":"module"
+
+Una vez realizado esta parte abrimos una terminal y copiamos el siguiente comando para instalar las siguiente libreias:
+  *cors
+  *mysql2
+  *sequelize
+                  npm install express cors mysql2 sequelize
+
+Cuando se ha descargado correctamente en el archivo package se añadirán nuevas líneas de comandos en las cuales aparecerán 
+cors, expres, mysql2 y sequelize. 
+NOTA: en caso de que en la primera vez no aparezca volver a ejecutar de nuevo el comando.
+
+Instalar nodemon con el siguiente comando: 
+                npm install -g nodemon
+
+Abrir POWER SHELL como administrador
+Verificar la configuración actual de la política de ejecución con el siguiente comando ->
+Get-ExecutionPolicy
+SI APARECE -> Restricted  habilitar la ejecución de scripts de forma local se utiliza el
+siguiente comando -> Set-ExecutionPolicy RemoteSigned   al final escribir Y para confirmar el cambio
+
+INICIO DE INSTALACION DE LIBRERIAS EN FRONTEND
+
+Nos salimos de la carpeta node con el siguiente comando “cd ..” y enseguida se escribe el siguiente comando npx creat-react-app mathskillup 
+y dejamos que cargue todo, se tendrá una estructura
+
+Nos pasamos a la carpeta de mathskillup con el comando cd mathskillup e introducimos el siguiente código 
+-> npm install -D tailwindcss@latest autoprefixer@latest postcss@latest
+Enseguida se ingresa el siguiente comando npm install -D @tailwindcss/forms@latest
+
+En caso que después de ejecutar los comandos anterior no aparece el archivo “tailwindcss.config.js” se introduce el siguiente comando “npx tailwindcss init” 
+En el archivo tailwind.config.js se va sustituir la línea 3 que dice content por la siguiente línea  content: ['./src/**/*.{html,js,jsx}', './components/**/*.{js, jsx, ts, tsx}'],
+Para instalar el propTypes se ingresa el siguiente comando:
+	Npm install prop-types 
+Esto en la carpeta del frontend
